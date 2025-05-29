@@ -1,0 +1,44 @@
+{
+    "timeout_threshold": 10,
+    "interface": "",
+    "filter": "tcp",
+    "duration": 0,
+    "enable_visual_alerts": false,
+    "enable_sound_alerts": true,
+    "severity_thresholds": {
+        "Baixo": 2,
+        "M\u00e9dio": 5,
+        "Alto": 10
+    },
+    "alert_sounds": {
+        "Baixo": "SystemAsterisk",
+        "M\u00e9dio": "SystemExclamation",
+        "Alto": "SystemHand"
+    },
+    "attack_detection_enabled": true,
+    "port_scan_detection": {
+        "enabled": true,
+        "threshold_ports": 15,
+        "time_window_seconds": 10
+    },
+    "brute_force_detection": {
+        "enabled": true,
+        "ports_to_monitor": [
+            21,
+            22,
+            23,
+            3389
+        ],
+        "threshold_failed_attempts": 5,
+        "time_window_seconds": 60
+    },
+    "flood_detection": {
+        "enabled": true,
+        "syn_flood_threshold_pps": 100,
+        "udp_flood_threshold_pps": 150,
+        "icmp_flood_threshold_pps": 100,
+        "time_window_seconds": 5
+    },
+    "attack_alert_sound": "SystemHand",
+    "attack_visual_alerts_enabled": true
+}
