@@ -5,4 +5,4 @@ Sniffer - Captura pacotes TCP / UDP / ICMP da rede
 
 Baixar phyton 3.13
 
-python netsnifferx_gui_alerts_usability.py
+python netsnifferx_gui_attack_detection_stable.py
